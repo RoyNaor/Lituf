@@ -1,0 +1,23 @@
+.Events {
+    height: 87vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+    .Events {
+      width: 100%;
+      height: 80%;
+      gap: 0.5px;
+      margin-top: 50px;
+      overflow: auto;
+      background-color: rgb(219, 217, 217);
+    }
+}
