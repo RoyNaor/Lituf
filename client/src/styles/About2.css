@@ -1,0 +1,198 @@
+.About {
+    height: 87vh;
+    background-color: rgba(233, 229, 229, 0.486);
+    flex: 1;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+
+.content {
+    height: 100%;
+    background-color: white;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.content .text-cont {
+    height: 45%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    direction: rtl; /* Set text direction to RTL */
+    text-align: right; /* Align text to the right */
+    word-wrap: break-word; /* Ensure text wraps correctly */
+    font-size: 18px;
+    background-color: lightgray;
+    border-radius: 15px;
+    padding: 20px;
+    
+}
+
+.content .text-cont button {
+    width: 35%;
+    height: 50px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: large;
+    background: #2FC446;
+    color: white;
+    margin-top: 50px;
+}
+
+.content .add-cont {
+    height: 80%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items in the center */
+    margin-top: 120px;
+}
+
+.icons-title {
+    margin-bottom: 10px; /* Space between the title and icons */
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center; /* Center the title */
+}
+
+.content .add-cont .animation-cont {
+    width: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+}
+
+.add-cont .icons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: lightgray;
+    border-radius: 15px;
+    padding: 20px;
+    height: 20%;
+    gap: 20px;
+}
+
+.icons svg {
+    font-size: xxx-large;
+}
+
+.icons-title h2 {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    
+    .About {
+        height: 80%;
+        background-color: white;
+        justify-content: center;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .content {
+        display: flex;
+        flex: 1;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 80%;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 10px;
+    }
+
+    .content .text-cont {
+        width: 80%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: top;
+        padding: 15px; 
+        margin-top: 40px; 
+        border-radius: 15px;
+        background-color: lightgray;
+        direction: rtl; /* Set text direction to RTL */
+        text-align: right; /* Align text to the right */
+        word-wrap: break-word; /* Ensure text wraps correctly */
+    }
+
+    .text-cont h1 {
+        font-size: 30px;
+        margin-top: -8px;
+    }
+
+    .text-cont b {
+        font-size: medium;
+    }
+
+    .content .text-cont button {
+        width: 50%;
+        height: 16%;
+        border-radius: 15px;
+        font-weight: bold;
+        font-size: small;
+        background: #2FC446;
+        color: white;
+        margin-top: 20px;
+    }
+
+    .content .add-cont {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: -55px;
+        
+    }
+
+    .add-cont .animation-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 60%;
+    }
+
+    .add-cont .icons {
+        width: 40%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        background-color: lightgray;
+        border-radius: 15px;
+        padding: 20px;
+        gap: 20px;
+        margin-left: 25px;
+    }
+
+    .icons-title {
+        display: none;
+    }
+
+    .icons svg {
+        font-size: 40px;
+    }
+
+    
+}
