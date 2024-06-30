@@ -1,0 +1,23 @@
+.PageNotFound {
+    height: 87vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+  .PageNotFound {
+    height: 80%;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+}

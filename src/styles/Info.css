@@ -1,0 +1,78 @@
+.Info {
+    height: 87vh; /* Adjust height to account for Navbar (8vh) and Footer (5vh) */
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: auto;
+    background-color: beige;
+  }
+  
+  .Info .info-content {
+    z-index: 10; /* Higher z-index than the background */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background for readability */
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+  }
+  
+  .Info .info-content h2 {
+    margin: 0;
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    line-height: 1.5; /* Adjust line height for better readability */
+    word-wrap: break-word; /* Ensure long words break properly */
+  }
+  
+  .Info .click {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #2FC446;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .Info .click:hover {
+    background-color: #28a745;
+  }
+  
+  @media (max-width: 768px) {
+    .Info {
+      display: flex;
+      flex-direction: column;
+      justify-content: top;
+      align-items: center;
+      background-image: url('C:/Users/royna/Lituf/Dev/client/lituf/src/assets/dog.jpg');
+      background-size: cover; 
+      background-position: center; 
+      background-repeat: no-repeat;
+    }
+  
+    .Info .info-content {
+      width: 90%; /* Adjust the width for mobile devices */
+      padding: 15px;
+    }
+  
+    .Info .info-content h2 {
+      font-size: 1.3rem; /* Adjust the font size for mobile devices */
+      font-weight: 500;
+    }
+  
+    .Info .click {
+      width: 80%;
+      height: auto;
+      font-size: x-large; /* Adjust the font size for mobile devices */
+      padding: 10px 20px;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+    }
+  }
+  

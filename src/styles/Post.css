@@ -1,0 +1,231 @@
+.PostComp {
+  height: 87vh;
+  width: 100%;
+  position: relative;
+  z-index: 9;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Arial', sans-serif;
+  text-align: right;
+  direction: rtl;
+  overflow-y: auto; /* Add overflow-y property */
+}
+
+.post-content {
+  width: 70%;
+  height: 100%;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background: #ffffff;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.post-comments {
+  width: 30%;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background: transparent;
+  flex-grow: 1;
+}
+
+.post-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.post-text {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #555555;
+}
+
+.post-footer {
+  font-size: 14px;
+  color: #888888;
+}
+
+.comment {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.comment-content {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.comment-info {
+  display: flex;
+  justify-content: row;
+  font-size: 12px;
+  color: #777;
+}
+
+.comment-username {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.comment-date {
+  font-style: italic;
+}
+
+.like-section {
+  cursor: pointer;
+}
+
+.like-section.liked svg {
+  color: red;
+  fill: red;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+  .PostComp {
+    height: 100%;
+    flex-direction: column;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto; /* Ensure overflow in mobile view */
+  }
+
+  .post-content {
+    width: 100%;
+    height: auto;
+    top: 0;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+  }
+
+  .comment-footer {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Space out the sections */
+  }
+
+  .comment-section {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    color: #2FC446;
+  }
+
+  .comment-input {
+    margin-left: 10px;
+    height: 25px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 5px;
+    width: 100%; /* Ensure the input takes the remaining space in the comment-section */
+  }
+
+  .comment-section svg {
+    transform: scaleX(-1);
+  }
+
+  .comment-footer svg {
+    font-size: xx-large;
+  }
+
+  .like-section, .reply-section {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2FC446;
+  }
+
+  .post-comments {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+  }
+
+  .post-comments .comment {
+    margin-top: 25px;
+    background-color: rgb(255, 255, 255);
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 5px;
+    color: black;
+    font-size: medium;
+    font-size: large;
+    border: solid 1.5px #23c43b;
+  }
+
+  .post-content .post-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: sticky;
+    top: 0;
+    background: #2FC446;
+    width: 100%;
+    padding: 10px; /* Add padding to ensure content doesn't overlap */
+    z-index: 10;
+  }
+
+  .post-title .title-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .post-title .title-info h4 {
+    margin-right: 10px;
+    color: white;
+    margin: 0;
+    margin-right: 10px;
+  }
+
+  .post-title .title-info svg {
+    color: white;
+    font-size: 45px;
+  }
+
+  .post-content .post-title .post-info {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    margin-right: 55px;
+    gap: 10px;
+  }
+
+  .post-content .post-title .post-info span {
+    font-size: medium;
+    color: #636161;
+  }
+
+  .post-content .post-text {
+    margin-right: 10px;
+    margin-top: 10px; /* Add margin-top to ensure text is not hidden */
+    height: auto;
+    background-color: transparent;
+  }
+}

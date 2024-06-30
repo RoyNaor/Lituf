@@ -1,0 +1,154 @@
+.Reg {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background-color: #f9f9f9;
+  justify-content: center;
+}
+
+.left-side-reg, .right-side-reg {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-side-reg {
+  width: 100%;
+  height: auto;
+  background-image: url('C:/Users/royna/Lituf/Dev/client/lituf/src/assets/bulldog.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.page-title-reg {
+  text-align: center;
+  font-size: x-large;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-title-reg h2 {
+  margin: 0;
+  padding: 0;
+}
+.page-title-reg svg {
+  margin-left: 5px;
+  font-size: xx-large;
+  color: #2fc446;
+}
+
+.formContainer {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  direction: rtl;
+  align-items: center;
+}
+
+.formContainer label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+.formContainer span {
+  color: red;
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.formContainer input,
+.formContainer textarea {
+  width: 80%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #f7f7f7;
+  transition: all 0.3s ease;
+  text-align: right;
+}
+
+.formContainer textarea {
+  height: 150px;
+}
+
+.formContainer input:focus,
+.formContainer textarea:focus {
+  border-color: #2fc446;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.formContainer button {
+  background-color: #2fc446;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 80%;
+  align-self: center;
+}
+
+.formContainer button:hover {
+  background-color: #28a745;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+  .Reg {
+      flex-direction: column;
+      height: 100%;
+  }
+
+  .left-side-reg {
+      display: none;
+  }
+
+  .right-side-reg {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .formContainer {
+      width: 80%;
+      align-items: start;
+  }
+
+  .page-title-reg {
+    margin-left: 30px;
+  }
+
+  .formContainer label {
+      font-size: 1rem;
+      font-weight: bold;
+  }
+
+  .formContainer input,
+  .formContainer textarea,
+  .formContainer button {
+      width: 90%;
+  }
+
+  .formContainer button {
+      padding: 10px;
+      font-size: 1rem;
+  }
+}
